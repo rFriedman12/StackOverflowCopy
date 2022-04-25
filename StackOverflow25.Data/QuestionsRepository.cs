@@ -97,7 +97,7 @@ namespace StackOverflow25.Data
         public Question GetQuestionById(int id)
         {
             using var context = new QuestionsDataContext(_connString);
-            return context.Questions.Include(q => q.QuestionsTags).ThenInclude(qt => qt.Tag).Include(q => q.Likes).Include(q => q.Answers).Include(q => q.User).FirstOrDefault(q => q.Id == id);
+            return context.Questions.Include(q => q.QuestionsTags).ThenInclude(qt => qt.Tag).Include(q => q.Likes).Include(q => q.Answers).ThenInclude(a => a.User).Include(q => q.User).FirstOrDefault(q => q.Id == id);
         }
 
         public void LikeQuestion(int questionId, int userId)
