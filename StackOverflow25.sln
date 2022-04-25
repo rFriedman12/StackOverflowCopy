@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31613.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflow25.Web", "StackOverflow25.Web\StackOverflow25.Web.csproj", "{6A5A6ED6-7354-477B-B3F5-CE5BF03DD6DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackOverflow25.Data", "StackOverflow25.Data\StackOverflow25.Data.csproj", "{5F37C593-14A3-45E7-9206-2D4E618ECC3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A5A6ED6-7354-477B-B3F5-CE5BF03DD6DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A5A6ED6-7354-477B-B3F5-CE5BF03DD6DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A5A6ED6-7354-477B-B3F5-CE5BF03DD6DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A5A6ED6-7354-477B-B3F5-CE5BF03DD6DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F37C593-14A3-45E7-9206-2D4E618ECC3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F37C593-14A3-45E7-9206-2D4E618ECC3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F37C593-14A3-45E7-9206-2D4E618ECC3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F37C593-14A3-45E7-9206-2D4E618ECC3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84033005-9B45-4814-8F70-B544A7DF49BF}
+	EndGlobalSection
+EndGlobal

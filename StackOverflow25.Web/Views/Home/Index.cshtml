@@ -1,0 +1,39 @@
+﻿@using StackOverflow25.Data
+@model HomeViewModel
+
+<div class="row">
+    @foreach (Question question in Model.Questions)
+    {
+        <div class="col-md-8 offset-md-2">
+            <div class="card card-body bg-light">
+                <h4>
+                    <a href="/home/viewquestion?id=@question.Id">
+                        @question.Title
+                    </a>
+                </h4>
+                <div>
+                    <span>Tags:</span>
+                    @foreach (QuestionsTags qt in question.QuestionsTags)
+                    {
+                        <span class="badge badge-primary">@qt.Tag.Name</span>
+                    }
+                </div>
+                <div style="margin-top: 10px;">
+                    @if (question.Text.Length > 200)
+                    {
+                        @question.Text.Substring(1, 200)
+                        <span>...</span>
+                    }
+                    else
+                    {
+                        @question.Text
+                    }
+                </div>
+                <span>Likes: @question.Likes.Count</span>
+                <br />
+                <span>@question.Answers.Count answer(s)</span>
+            </div>
+        </div>
+    }
+</div>
+d
